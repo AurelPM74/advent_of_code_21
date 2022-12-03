@@ -30,9 +30,9 @@ pub fn read_input_of_the_day_lines(day: u8) -> Vec<String>{
 }  
 
 //take a reference to an array containing strings and return the array of u32, panic if not possible
-pub fn array_string_to_int(array_string: &Vec<String>) -> Vec<u32>{
+pub fn vec_string_to_int(vec_string: &Vec<String>) -> Vec<u32>{
     //iterate over the words, map a string to an int (panic if not possible), and collect
-    array_string.iter()
+    vec_string.iter()
                 .map(|s| s.parse::<u32>().unwrap())
                 .collect()
 
